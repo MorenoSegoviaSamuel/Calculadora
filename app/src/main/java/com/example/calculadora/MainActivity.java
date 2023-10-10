@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
@@ -66,10 +64,14 @@ public class MainActivity extends AppCompatActivity {
     }
     public void igual(View view) {
         TextView res = (TextView) findViewById(R.id.resultado);
-        res.setText(Calculadora.calcular(res.getText().toString()));
+        res.setText(Calculadora.calculator(res.getText().toString()));
     }
     public void menos(View view) {
         TextView res = (TextView) findViewById(R.id.resultado);
         res.setText(res.getText()+"-");
+    }
+    public void multiplicar(View view) {
+        TextView res = (TextView) findViewById(R.id.resultado);
+        res.setText(res.getText() + "*");
     }
 }
