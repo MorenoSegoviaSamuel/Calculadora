@@ -68,4 +68,8 @@ public class MainActivity extends AppCompatActivity {
         TextView res = (TextView) findViewById(R.id.resultado);
         res.setText(Calculadora.calcular(res.getText().toString()));
     }
+    public void menos(View view) {
+        TextView res = (TextView) findViewById(R.id.resultado);
+        res.setText(res.getText()+"-");
+    }
 }
